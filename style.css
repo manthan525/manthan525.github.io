@@ -1,0 +1,79 @@
+body { font-family: 'Plus Jakarta Sans', sans-serif; margin: 0; color: #1a1f2c; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.top-info { background: #0f172a; color: white; padding: 10px 0; font-size: 14px; }
+.navbar { padding: 20px 0; background: white; border-bottom: 1px solid #f1f5f9; }
+.navbar .container { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-weight: 800; font-size: 24px; color: #c53030; }
+.logo span { color: #64748b; font-size: 14px; font-weight: 400; display: block; }
+nav a { text-decoration: none; color: #334155; margin-left: 25px; font-weight: 600; transition: 0.3s; }
+nav a.active { color: #c53030; }
+.top-bar {
+    background-color: #1a1f2c; /* Dark color jo aapki photo mein hai */
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.top-bar .contact-info {
+    display: flex;
+    justify-content: flex-start; /* Details ko left se shuru karega */
+    gap: 30px; /* Phone aur Email ke beech gap rakhega */
+    flex-wrap: wrap; /* Mobile par adjust hone ke liye */
+}
+
+.top-bar span {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Icon aur text ke beech gap */
+}
+
+/* Hero Section Layout */
+.hero {
+    height: 70vh; /* Screen ka 70% area cover karega */
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('diyapack.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* THE SUNDER BUTTON (Targeting .btn-main) */
+.btn-main {
+    background-color: #c53030; /* Lovable Red */
+    color: white !important;
+    padding: 18px 45px;
+    font-size: 22px;
+    font-weight: 800;
+    border: none;
+    border-radius: 50px; /* Capsule shape */
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 10px 25px rgba(197, 48, 48, 0.5); /* Glow effect */
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+/* Button Hover Effect */
+.btn-main:hover {
+    transform: scale(1.1); /* Thoda bada hoga */
+    background-color: white;
+    color: #c53030 !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border: 2px solid #c53030;
+}
+
+.banner-red { background: #c53030; color: white; text-align: center; padding: 60px 20px; }
+.banner-red h2 { font-size: 32px; margin-bottom: 10px; }
+
+.welcome { padding: 80px 20px; text-align: center; }
+.welcome h2 span { color: #c53030; }
+.welcome p { color: #64748b; font-size: 18px; max-width: 800px; margin: 20px auto; }
+
+.footer { background: #1a1f2c; color: #94a3b8; padding: 60px 0 20px; }
+.footer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.footer h4 { color: white; margin-bottom: 20px; }
+.footer a { color: #94a3b8; text-decoration: none; }
+.footer-bottom { text-align: center; border-top: 1px solid #334155; margin-top: 40px; padding-top: 20px; }

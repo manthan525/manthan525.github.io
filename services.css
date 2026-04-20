@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
+
+/* 1. Header Image ko Light Rakha hai */
+.page-header {
+    height: 300px;
+    /* 0.2 means 80% image dikhegi, sirf 20% dark hoga */
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('diyapack.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.page-header h1 { font-size: 40px; font-weight: 800; margin-bottom: 10px; }
+
+/* 2. What We Offer Styling */
+.services-intro {
+    text-align: center;
+    padding: 70px 20px 40px;
+}
+.services-intro h2 { font-size: 36px; font-weight: 800; color: #1a1f2c; }
+.red-line { 
+    width: 60px; height: 4px; background: #c53030; 
+    margin: 15px auto; border-radius: 2px; 
+}
+.services-intro p { color: #64748b; max-width: 650px; margin: 0 auto; font-size: 16px; }
+
+/* 3. Grid Fix (3 Cards in one line) */
+.services-container { max-width: 1200px; margin: 0 auto; padding: 0 20px 80px; }
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* 4. Card Styling */
+.s-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    border: 1px solid #f1f5f9;
+    transition: 0.3s ease;
+}
+.s-card:hover { transform: translateY(-10px); box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+
+.s-img img { width: 100%; height: 230px; object-fit: cover; }
+
+.s-info { padding: 30px; }
+.s-info h3 { font-size: 22px; font-weight: 700; margin-bottom: 12px; }
+.s-info p { color: #64748b; font-size: 15px; line-height: 1.6; margin-bottom: 20px; }
+
+.s-btn { 
+    text-decoration: none; color: #c53030; 
+    font-weight: 700; font-size: 15px; 
+    border-bottom: 2px solid transparent; transition: 0.3s;
+}
+.s-btn:hover { border-bottom: 2px solid #c53030; }
